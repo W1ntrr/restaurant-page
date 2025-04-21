@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+:root {
+  --color-primary-bg: #cad2c5;
+  --color-accent-green: #84a98c;
+  --color-secondary-green: #52796f;
+  --color-dark-slate: #354f52;
+  --color-deep-charcoal: #2f3e46;
+}
 
 * {
   margin: 0;
@@ -7,5 +15,85 @@
 
 body {
   min-width: 100%¡;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--color-primary-bg);
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav button {
+  background: none;
+  border: none;
+  margin-inline: 2em;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.9em;
+}
+
+nav button:hover::after {
+  position: absolute;
+  content: '';
+  background-color: var(--color-accent-green);
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  min-height: 90vh;
+  align-items: center;
+  padding: 0 5rem;
+  margin-inline: 5rem;
+}
+
+.left-section h1 {
+  font-size: 5rem;
+  font-family: 'Pacifico', cursive;
+  color: var(--color-deep-charcoal);
+}
+
+.left-section p {
+  color: #667;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.right-section img {
+  width: 500px;
+}
+
+.learn-more-btn {
+  padding: 1em;
+  border: none;
+  border-radius: 0.35em;
+  background-color: var(--color-secondary-green);
+  color: white;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all ease 0.15s;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  transform: scale(0.95);
+}
+
+.learn-more-btn:active {
+  transform: scale(1.05);
 }
