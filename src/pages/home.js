@@ -16,7 +16,8 @@ export function loadHomePage() {
 
   const description = document.createElement('p');
   description.classList.add('description');
-  description.textContent = 'Bold flavors, fresh and fast.';
+  description.textContent =
+    'Bold flavors, fresh & fast—chef—crafted seasonal dishes served in minutes.';
 
   const actionContainer = document.createElement('div');
   actionContainer.classList.add('action-container');
@@ -25,8 +26,8 @@ export function loadHomePage() {
   learnMoreBtn.classList.add('learn-more-btn');
   learnMoreBtn.textContent = 'Learn More';
   learnMoreBtn.addEventListener('click', () => {
-    loadAboutPage();
     content.innerHTML = '';
+    loadAboutPage();
   });
 
   const rightSection = document.createElement('div');

@@ -10,6 +10,15 @@ const tabs = ['Home', 'About', 'Contact'];
 
 loadHomePage();
 initializeTabButtons();
+animateHero();
+
+function animateHero() {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+
+  hero.classList.remove('loaded');
+  requestAnimationFrame(() => hero.classList.add('loaded'));
+}
 
 function initializeTabButtons() {
   tabButtons.forEach((tab, index) => {
@@ -26,6 +35,7 @@ function switchTab(tab) {
   switch (tab) {
     case 'Home':
       loadHomePage();
+      animateHero();
       break;
     case 'About':
       loadAboutPage();
