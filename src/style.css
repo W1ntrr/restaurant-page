@@ -198,3 +198,11 @@ nav button:hover::after {
     transform: scale(1);
   }
 }
+
+.menu-category-dishes {
+  display: flex;
+}
+
+.dish-image img {
+  width: 100px;
+}
