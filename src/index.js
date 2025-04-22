@@ -9,6 +9,7 @@ import menuBackground from './images/food-background3.png';
 const content = document.getElementById('content');
 const tabButtons = document.querySelectorAll('nav button');
 const header = document.querySelector('header');
+const nav = document.querySelector('nav');
 
 const title = document.createElement('div');
 header.prepend(title);
@@ -44,14 +45,15 @@ function animateHero() {
   hero.classList.remove('loaded');
   requestAnimationFrame(() => hero.classList.add('loaded'));
 }
-
 function initializeTabButtons() {
-  tabButtons.forEach((tab, index) => {
+  nav.addEventListener('click', (e) => {
+    if (e.target.matches('button'));
+    const tab = e.target;
+    const index = Array.from(tabButtons).indexOf(tab);
+
     tab.setAttribute('data-tab', tabs[index]);
-    tab.addEventListener('click', () => {
-      const tabId = tab.getAttribute('data-tab');
-      switchTab(tabId);
-    });
+    const tabId = tab.getAttribute('data-tab');
+    switchTab(tabId);
   });
 }
 
