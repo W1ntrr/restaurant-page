@@ -68,11 +68,9 @@ function switchTab(tab) {
       break;
     case 'Menu':
       loadMenuPage();
-      setBackground(backgroundImages.Menu);
       break;
     case 'About':
       loadAboutPage();
-      setBackground(backgroundImages.About);
       break;
     default:
       console.error(`Unknown Tab: ${tab}`);

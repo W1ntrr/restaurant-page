@@ -25,4 +25,25 @@ export function loadMenuPage() {
   }
 
   content.appendChild(container);
+  const dishes = document.querySelectorAll('.dish');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('pop-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  dishes.forEach((dish, index) => {
+    dish.style.transitionDelay = `${index * 0.1}s`;
+    observer.observe(dish);
+  });
+  dishes.forEach((dish) => observer.observe(dish));
 }

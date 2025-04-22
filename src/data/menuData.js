@@ -12,57 +12,57 @@ export const menuData = {
   Appetizers: [
     {
       title: 'Steak Tartare',
-      price: '$18',
+      price: '$18.00',
       image: steakTartareImg,
     },
 
     {
       title: 'Seared Scallops',
-      price: '$21',
+      price: '$30.95',
       image: searedScallopsImg,
     },
 
     {
       title: 'Foie Gras',
-      price: '$24',
+      price: '$35.00',
       image: foieGrasImg,
     },
   ],
   Dessert: [
     {
       title: 'Beef Wellington',
-      price: '$45',
+      price: '$79.00',
       image: beefWellingtonImg,
     },
 
     {
       title: 'Lobster Thermidor',
-      price: '$48',
+      price: '$54.00',
       image: lobsterImg,
     },
 
     {
       title: 'Pan-Seared Branzino',
-      price: '$34',
+      price: '$30.00',
       image: branzinoImg,
     },
   ],
   'Main Course': [
     {
       title: 'Opera Cake',
-      price: '$14',
+      price: '$5.25',
       image: operaCakeImg,
     },
 
     {
       title: 'Molten Chocolate Foundant',
-      price: '$12',
+      price: '$12.00',
       image: moltenChocolateFondantImg,
     },
 
     {
       title: 'Tarte Tatin',
-      price: '$13',
+      price: '$13.00',
       image: tarteTatinImg,
     },
   ],
