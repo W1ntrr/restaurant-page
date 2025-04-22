@@ -47,13 +47,14 @@ function animateHero() {
 }
 function initializeTabButtons() {
   nav.addEventListener('click', (e) => {
-    if (e.target.matches('button'));
-    const tab = e.target;
-    const index = Array.from(tabButtons).indexOf(tab);
+    if (e.target.matches('button')) {
+      const tab = e.target;
+      const index = Array.from(tabButtons).indexOf(tab);
 
-    tab.setAttribute('data-tab', tabs[index]);
-    const tabId = tab.getAttribute('data-tab');
-    switchTab(tabId);
+      tab.setAttribute('data-tab', tabs[index]);
+      const tabId = tab.getAttribute('data-tab');
+      switchTab(tabId);
+    }
   });
 }
 
