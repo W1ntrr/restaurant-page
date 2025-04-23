@@ -28,7 +28,7 @@ export const menuData = {
       image: foieGrasImg,
     },
   ],
-  Dessert: [
+  'Main Course': [
     {
       title: 'Beef Wellington',
       price: '$79.00',
@@ -47,7 +47,7 @@ export const menuData = {
       image: branzinoImg,
     },
   ],
-  'Main Course': [
+  Dessert: [
     {
       title: 'Opera Cake',
       price: '$5.25',
